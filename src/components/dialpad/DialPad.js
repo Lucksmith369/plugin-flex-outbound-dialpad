@@ -491,7 +491,7 @@ export class DialPad extends React.Component {
   eventkeydownListener = e => this.keydownListener(e);
 
   pasteListener = e => {
-             var paste = (e.clipboardData.getData("text") || window.clipboardData.getData("text"));
+        var paste = (e.clipboardData.getData("text") || window.clipboardData.getData("text"));
 
         if (paste.substring(0, 1) === '+') {
             paste = '+' + paste.replace(/\D/g, "");
